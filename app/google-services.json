@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "926238668509",
+    "firebase_url": "https://habbitlandapp.firebaseio.com",
+    "project_id": "habbitlandapp",
+    "storage_bucket": "habbitlandapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926238668509:android:8dd64dd0a17c24aa",
+        "android_client_info": {
+          "package_name": "com.oliverpelham.habbitlandapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926238668509-6aka9ceo6a18kcpcm5v8eng2hjrt67gp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.oliverpelham.habbitlandapp",
+            "certificate_hash": "196fa0264be2a5641c6c08397ae2e2177afd40ab"
+          }
+        },
+        {
+          "client_id": "926238668509-gvur6ba4k0nsd5oboe0195knfm2vt0ph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGWCh9vDJfzuwM9Juxf38nDgJr6q4WVjU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926238668509-gvur6ba4k0nsd5oboe0195knfm2vt0ph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
