@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.oliverpelham.habbitlandapp.R;
 
 public class LoginFragment extends Fragment {
@@ -21,22 +23,25 @@ public class LoginFragment extends Fragment {
     public static LoginFragment newInstance() {
         return new LoginFragment();
     }
-    private View.OnClickListener loginButtonListner;
+    //private View.OnClickListener loginButtonListner;
+    private FirebaseAuth authent;
 
-    {
-        loginButtonListner = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //What to do on click
-            }
-        };
-    }
+    //{
+    //    loginButtonListner = new View.OnClickListener() {
+    //        @Override
+    //        public void onClick(View v) {
+    //            //What to do on click
+    //        }
+    //    };
+    //}
 
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
+
+        authent = FirebaseAuth.getInstance();
 
         View view = inflater.inflate(R.layout.login_fragment, container, false);
 
@@ -65,6 +70,16 @@ public class LoginFragment extends Fragment {
 
         return view;
 
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = authent.getCurrentUser();
+
+
+        //updateUI(currentUser); //Approaching this in a different way?
     }
 
     @Override

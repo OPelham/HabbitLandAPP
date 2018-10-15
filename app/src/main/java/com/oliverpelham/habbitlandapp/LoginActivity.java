@@ -16,5 +16,16 @@ public class LoginActivity extends AppCompatActivity {
                     .replace(R.id.container, LoginFragment.newInstance())
                     .commitNow();
         }
+
+        //ask if logged in if so go to HomeScreen frame, else go to login frame
     }
+
+    //establish if logged in or not..
+   // protected void onStart(){
+        //if (auth.getCurrentUser() != null) {
+        //LoginFragment view = new LoginFragment
+        //...
+        //}
+
+//    }
 }
